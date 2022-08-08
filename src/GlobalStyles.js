@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+const GlobalStyles = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 *,
 *::before,
@@ -13,5 +15,8 @@ body {
 
 h1{
    font-weight: 900;
-
 }
+img{max-width:100%}
+`;
+
+export default GlobalStyles;

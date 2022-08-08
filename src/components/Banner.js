@@ -22,7 +22,6 @@ function Banner() {
 export default Banner;
 
 const BannerWrap = styled.div`
-  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -34,7 +33,6 @@ const BannerWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
   h1 {
     font-size: 2.5rem;
   }
@@ -44,6 +42,8 @@ const BannerWrap = styled.div`
 `;
 
 const BannerTextWrap = styled.div`
+  margin: 0 auto;
+  width: 100%;
   max-width: 1440px;
   padding: 1em;
 `;
@@ -53,18 +53,19 @@ const ButtonGroup = styled.div`
   display: flex;
   gap: 1em;
   margin-top: 1em;
-  font-weight: 500;
-  letter-spacing: 0.2em;
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
-const LeftButton = styled.div`
+const LeftButton = styled.button`
+  color: white;
+  border: none;
   text-align: center;
   padding: 0.8em 0.9em;
   background-color: purple;
   opacity: 0.85;
+  font-weight: 700;
+  letter-spacing: 0.3em;
   cursor: pointer;
 `;
-const RightButton = styled(LeftButton)`
-`;
+const RightButton = styled(LeftButton)``;
