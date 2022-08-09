@@ -20,9 +20,10 @@ export default ProductCard;
 const ProductCardWrap = styled.div`
   position: relative;
   width: 18%;
-  box-shadow: 0 0 59px #1819231a;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 9px 25px 0px;
   padding: 1em;
   min-width: 15em;
+  border-radius: 5px;
   img {
     max-width: 100%;
   }
@@ -37,6 +38,10 @@ const ProductCardTextWrap = styled.div`
   h3 {
     font-style: italic;
     font-size: 0.8em;
+    margin-bottom: 0.5em;
+  }
+  p {
+    color: purple;
   }
 `;
 const ProductTag = styled.div`

@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import Banner from "../components/Banner";
 import ProductRecSection from "../components/ProductRecSection";
-
+import PromotionSection from "../components/PromotionSection";
 function Home() {
   return (
     <Container>
       <Banner />
       <ProductRecSection />
+      <PromotionSection />
+      <ProductRecSection />
+      <PromotionSection />
     </Container>
   );
 }
