@@ -1,7 +1,6 @@
 import React from "react";
 import PromotionCard from "./PromotionCard";
 import styled from "styled-components";
-
 function PromotionSection() {
   return (
     <PromotionSectionWrap>
@@ -21,7 +20,6 @@ const PromotionSectionWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-
   gap: 0.3em;
   @media (min-width: 768px) {
     flex-direction: row;

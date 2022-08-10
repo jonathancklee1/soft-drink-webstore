@@ -1,21 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import ProductCard from "./ProductCard";
+import { Fade } from "react-reveal";
 
-function ProductRecSection() {
+function ProductRecSection(props) {
   return (
     <SectionWrap>
       <ProductRecText>
-        <h1>Best Sellers</h1>
+        <h1>{props.title}</h1>
         <ViewAllBtn>View All</ViewAllBtn>
       </ProductRecText>
-      <ProductList>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-      </ProductList>
+      <Fade bottom>
+        <ProductList>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </ProductList>
+      </Fade>
     </SectionWrap>
   );
 }
@@ -33,7 +36,7 @@ const ProductRecText = styled.div`
   margin: 0 auto;
   margin-bottom: 3em;
   h1 {
-    color: purple;
+    color: ${({ theme }) => theme.colors.secondaryColor};
     margin-bottom: 0.5em;
     font-size: 2.5rem;
   }
@@ -43,9 +46,13 @@ const ProductList = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1em;
+  gap: 0.5em;
   overflow: hidden;
   overflow-x: scroll;
+  padding: 1em;
+  @media (min-width) {
+    overflow-x: none;
+  }
 `;
 const ViewAllBtn = styled.div`
   text-align: center;

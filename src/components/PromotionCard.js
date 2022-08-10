@@ -1,16 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import promotionImg from "../assets/img/dr-pepper-cover.jpg";
+import { Fade } from "react-reveal";
+import Pulse from "react-reveal/Pulse";
+import HeadShake from "react-reveal/HeadShake";
 
 function PromotionCard() {
   return (
     <PromotionPoster>
       <PosterTextWrap>
-        <PosterTextContent>
-          <p>Sparkling Drinks</p>
-          <h1>New Taste in the house</h1>
-        </PosterTextContent>
-        <ShopButton>Shop Brands</ShopButton>
+        <Fade bottom>
+          <PosterTextContent>
+            <p>Sparkling Drinks</p>
+            <h1>New Taste in the house</h1>
+          </PosterTextContent>
+        </Fade>
+        <HeadShake>
+          <ShopButton>Shop Brands</ShopButton>
+        </HeadShake>
       </PosterTextWrap>
     </PromotionPoster>
   );
@@ -39,12 +46,6 @@ const ShopButton = styled.div`
 const PromotionPoster = styled.div`
   width: 100%;
   height: 19em;
-  /* background: linear-gradient(
-      0deg,
-      rgba(255, 0, 150, 0.3),
-      rgba(255, 0, 150, 0.3)
-    ),
-    url(${promotionImg}); */
   background-image: url(${promotionImg}),
     linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5));
   background-blend-mode: overlay;
@@ -58,5 +59,6 @@ const PromotionPoster = styled.div`
   padding: 1.5em;
   @media (min-width: 768px) {
     width: 49%;
+    height: 30em;
   }
 `;

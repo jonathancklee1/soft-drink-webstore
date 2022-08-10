@@ -1,19 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import bannerImg from "../assets/img/diet-coke.jpg";
+import { Fade } from "react-reveal";
 
 function Banner() {
   return (
     <BannerWrap>
       <BannerTextWrap>
-        <BannerTextContent>
-          <h1>Diet Coke</h1>
-          <p>New way to diet</p>
-        </BannerTextContent>
-        <ButtonGroup>
-          <LeftButton>Buy Now</LeftButton>
-          <RightButton>Explore More</RightButton>
-        </ButtonGroup>
+        <Fade left>
+          <BannerTextContent>
+            <h1>Diet Coke</h1>
+            <p>New way to diet</p>
+          </BannerTextContent>
+        </Fade>
+        <Fade bottom>
+          <ButtonGroup>
+            <LeftButton>Buy Now</LeftButton>
+            <RightButton>Explore More</RightButton>
+          </ButtonGroup>
+        </Fade>
       </BannerTextWrap>
     </BannerWrap>
   );
@@ -66,6 +71,7 @@ const LeftButton = styled.button`
   opacity: 0.85;
   font-weight: 700;
   letter-spacing: 0.3em;
+  max-width: 20em;
   cursor: pointer;
 `;
 const RightButton = styled(LeftButton)``;

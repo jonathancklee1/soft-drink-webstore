@@ -7,9 +7,9 @@ function Home() {
   return (
     <Container>
       <Banner />
-      <ProductRecSection />
+      <ProductRecSection title="Best Sellers" />
       <PromotionSection />
-      <ProductRecSection />
+      <ProductRecSection title="New Arrivals" />
       <PromotionSection />
     </Container>
   );

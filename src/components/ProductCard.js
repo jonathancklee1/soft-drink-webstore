@@ -19,13 +19,16 @@ function ProductCard() {
 export default ProductCard;
 const ProductCardWrap = styled.div`
   position: relative;
-  width: 18%;
-  box-shadow: rgba(100, 100, 111, 0.4) 0px 9px 25px 0px;
+  width: 19%; 
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 9px 20px 0px;
   padding: 1em;
   min-width: 15em;
   border-radius: 5px;
   img {
     max-width: 100%;
+  }
+  @media (min-width: 768px) {
+    min-width: initial;
   }
 `;
 const ProductCardTextWrap = styled.div`
