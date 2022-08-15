@@ -6,9 +6,10 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     background: "#fff",
-    secondaryColor: "purple",
+    secondaryColor: "#E9120B",
     header: "black",
-    headerText: "#8BE8CB",
+    headerText: "#51E5FF",
+    mobileNav: "#000",
   },
   mobile: "768px",
 };

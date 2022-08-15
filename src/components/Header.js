@@ -10,6 +10,7 @@ import {
 
 function Header(theme) {
   const [isMobile, setIsMobile] = useState(false);
+  const [burgerOpen, setBurgerOpen] = useState(false);
 
   // Check if viewport is in mobile width
   useEffect(() => {
@@ -59,7 +60,7 @@ function Header(theme) {
               </li>
               <li>
                 <a href="#">
-                  <FaStream />
+                  <FaStream onClick={() => setBurgerOpen(true)} />
                 </a>
               </li>
               <li>
@@ -91,8 +92,8 @@ function Header(theme) {
           </Menu>
         )}
       </HeaderContent>
-      <BurgerNav>
-        <CustomClose />
+      <BurgerNav show={burgerOpen}>
+        <CustomClose onClick={() => setBurgerOpen(false)} />
         <ul>
           <li>
             <a href="#">Home</a>
@@ -188,22 +189,27 @@ const BurgerNav = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: white;
-  width: 20vw;
+  background-color: ${({ theme }) => theme.colors.mobileNav};
+  width: 15em;
   z-index: 100;
   padding: 1em;
+  transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
+  transition: transform 0.4s ease-in;
   ul {
+    margin-top: 3em;
     list-style: none;
     li {
       padding: 0.9em;
-      border-bottom: 1px solid ${({ theme }) => theme.colors.headerText};
+      border-bottom: 2px solid ${({ theme }) => theme.colors.secondaryColor};
       a {
         color: ${({ theme }) => theme.colors.headerText};
-        font-weight: 600;
+        font-weight: 700;
+        text-transform: uppercase;
       }
     }
   }
 `;
 const CustomClose = styled(FaTimes)`
+  float: right;
   font-size: 1.5rem;
 `;

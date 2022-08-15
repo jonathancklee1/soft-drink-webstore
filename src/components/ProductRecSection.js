@@ -2,8 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import ProductCard from "./ProductCard";
 import { Fade } from "react-reveal";
-
+import { selectDrinks } from "../features/drinks/drinkSlice";
+import { useSelector } from "react-redux";
 function ProductRecSection(props) {
+  const drinks = useSelector(selectDrinks);
+  console.log(drinks);
+  const featuredDrinks = drinks.filter((drink) => drink.featured);
+  const bestSellerDrinks = drinks.filter((drink) => drink.bestSeller);
   return (
     <SectionWrap>
       <ProductRecText>
@@ -12,11 +17,27 @@ function ProductRecSection(props) {
       </ProductRecText>
       <Fade bottom>
         <ProductList>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {drinks && props.title === "Popular This Week"
+            ? featuredDrinks.map((drink, index) => (
+                <ProductCard
+                  key={index}
+                  name={drink.name}
+                  brand={drink.brand}
+                  price={drink.price}
+                  img={drink.img}
+                  featured={drink.featured}
+                />
+              ))
+            : bestSellerDrinks.map((drink, index) => (
+                <ProductCard
+                  key={index}
+                  name={drink.name}
+                  brand={drink.brand}
+                  price={drink.price}
+                  img={drink.img}
+                  bestSeller={drink.bestSeller}
+                />
+              ))}
         </ProductList>
       </Fade>
     </SectionWrap>
@@ -50,14 +71,15 @@ const ProductList = styled.div`
   overflow: hidden;
   overflow-x: scroll;
   padding: 1em;
-  @media (min-width) {
-    overflow-x: none;
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    overflow-x: hidden;
   }
 `;
 const ViewAllBtn = styled.div`
   text-align: center;
   padding: 0.8em 0.9em;
-  background-color: purple;
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
+
   opacity: 0.85;
   cursor: pointer;
   color: white;
@@ -66,4 +88,8 @@ const ViewAllBtn = styled.div`
   text-transform: uppercase;
   font-size: 0.8rem;
   display: inline-block;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;

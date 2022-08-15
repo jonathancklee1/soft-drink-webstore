@@ -67,11 +67,15 @@ const LeftButton = styled.button`
   border: none;
   text-align: center;
   padding: 0.8em 0.9em;
-  background-color: purple;
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
   opacity: 0.85;
   font-weight: 700;
   letter-spacing: 0.3em;
   max-width: 20em;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 const RightButton = styled(LeftButton)``;

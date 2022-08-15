@@ -1,11 +1,35 @@
 import React from "react";
 import PromotionCard from "./PromotionCard";
 import styled from "styled-components";
-function PromotionSection() {
+import { selectPromotions } from "../features/promotions/promotionSlice";
+import { useSelector } from "react-redux";
+function PromotionSection(props) {
+  const promotions = useSelector(selectPromotions);
+  const brandDeals = promotions.filter((promotions) => promotions.brandDeals);
+  const nonBrandDeals = promotions.filter(
+    (promotions) => promotions.brandDeals === false
+  );
   return (
     <PromotionSectionWrap>
-      <PromotionCard />
-      <PromotionCard />
+      {props.title === "Brand Deals"
+        ? brandDeals.map((brandPromo, index) => (
+            <PromotionCard
+              key={index}
+              title={brandPromo.title}
+              subtitle={brandPromo.subtitle}
+              brand={brandPromo.brandDeals}
+              img={brandPromo.img}
+            />
+          ))
+        : nonBrandDeals.map((brandPromo, index) => (
+            <PromotionCard
+              key={index}
+              title={brandPromo.title}
+              subtitle={brandPromo.subtitle}
+              brand={brandPromo.brandDeals}
+              img={brandPromo.img}
+            />
+          ))}
     </PromotionSectionWrap>
   );
 }

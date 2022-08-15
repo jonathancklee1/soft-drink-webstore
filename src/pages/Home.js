@@ -8,9 +8,9 @@ function Home() {
     <Container>
       <Banner />
       <ProductRecSection title="Best Sellers" />
-      <PromotionSection />
-      <ProductRecSection title="New Arrivals" />
-      <PromotionSection />
+      <PromotionSection title="Brand Deals" />
+      <ProductRecSection title="Popular This Week" />
+      <PromotionSection title="Non-Brand Deals" />
     </Container>
   );
 }
