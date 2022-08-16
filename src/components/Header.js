@@ -200,7 +200,7 @@ const BurgerNav = styled.div`
     list-style: none;
     li {
       padding: 0.9em;
-      border-bottom: 2px solid ${({ theme }) => theme.colors.secondaryColor};
+      border-bottom: 2px solid white;
       a {
         color: ${({ theme }) => theme.colors.headerText};
         font-weight: 700;

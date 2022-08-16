@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Banner from "../components/Banner";
 import ProductRecSection from "../components/ProductRecSection";
 import PromotionSection from "../components/PromotionSection";
+import Footer from "../components/Footer";
 function Home() {
   return (
     <Container>
@@ -11,6 +12,7 @@ function Home() {
       <PromotionSection title="Brand Deals" />
       <ProductRecSection title="Popular This Week" />
       <PromotionSection title="Non-Brand Deals" />
+      <Footer />
     </Container>
   );
 }
