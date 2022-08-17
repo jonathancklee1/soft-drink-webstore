@@ -3,12 +3,20 @@ import styled from "styled-components";
 import Banner from "../components/Banner";
 import ProductRecSection from "../components/ProductRecSection";
 import PromotionSection from "../components/PromotionSection";
+import PromotionCard from "../components/PromotionCard";
 import Footer from "../components/Footer";
 function Home() {
   return (
     <Container>
       <Banner />
       <ProductRecSection title="Best Sellers" />
+      <PromotionCard
+        width="100%"
+        key={2}
+        title="New Imports From Mexico"
+        subtitle="Explore Foreign Drinks"
+        img={"../assets/img/landscape/jarritos-strawberry-cover.jpg"}
+      />
       <PromotionSection title="Brand Deals" />
       <ProductRecSection title="Popular This Week" />
       <PromotionSection title="Non-Brand Deals" />

@@ -38,8 +38,8 @@ export default PromotionSection;
 
 const PromotionSectionWrap = styled.div`
   width: 100%;
-  margin: 5em auto;
-  padding: 1em;
+  margin: 0.3em auto 5em auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;

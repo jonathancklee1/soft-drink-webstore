@@ -141,6 +141,7 @@ const HeaderContent = styled.div`
   padding: 0.5em 1.25em;
   max-width: 1440px;
   h1 {
+    font-family: "Lobster", cursive;
     font-size: 1.4rem;
     @media (min-width: ${({ theme }) => theme.mobile}) {
       width: 30%;

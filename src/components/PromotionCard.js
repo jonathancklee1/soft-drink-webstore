@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import promotionImg from "../assets/img/dr-pepper-cover.jpg";
 import { Fade } from "react-reveal";
 import HeadShake from "react-reveal/HeadShake";
 
 function PromotionCard(props) {
   console.log(props.img);
   return (
-    <PromotionPoster img={props.img}>
+    <PromotionPoster img={props.img} width={props.width}>
       <PosterTextWrap>
         <Fade bottom>
           <PosterTextContent>
@@ -24,11 +23,13 @@ function PromotionCard(props) {
 }
 
 export default PromotionCard;
-const PosterTextWrap = styled.div``;
+const PosterTextWrap = styled.div`
+  max-width: 1440px;
+`;
 const PosterTextContent = styled.div`
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
+
   padding: 1em 0;
 `;
 const ShopButton = styled.div`
@@ -38,7 +39,6 @@ const ShopButton = styled.div`
   text-align: center;
   padding: 0.8em 0.9em;
   background-color: ${({ theme }) => theme.colors.secondaryColor};
-
   opacity: 0.85;
   font-weight: 700;
   letter-spacing: 0.3em;
@@ -63,7 +63,7 @@ const PromotionPoster = styled.div`
   justify-content: flex-end;
   padding: 1.5em;
   @media (min-width: 768px) {
-    width: 49%;
+    width: ${(props) => (props.width ? "100%" : "50%")};
     height: 30em;
   }
 `;

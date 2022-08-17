@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import bannerImg from "../assets/img/diet-coke.jpg";
 import { Fade } from "react-reveal";
 
 function Banner() {
@@ -9,8 +8,8 @@ function Banner() {
       <BannerTextWrap>
         <Fade left>
           <BannerTextContent>
-            <h1>Diet Coke</h1>
-            <p>New way to diet</p>
+            <h1>New Tastes in Store</h1>
+            <p>View Our Wide Selections Now</p>
           </BannerTextContent>
         </Fade>
         <Fade bottom>
@@ -31,7 +30,7 @@ const BannerWrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${bannerImg});
+  background-image: url("../assets/img/landscape/vending-machine-banner.jpg");
   padding: 40px 40px;
   color: white;
   position: relative;

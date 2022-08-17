@@ -24,10 +24,15 @@ const ProductCardWrap = styled.div`
   padding: 1em;
   min-width: 15em;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
   img {
     object-fit: cover;
     width: 100%;
     height: 14.3em;
+  }
+  &:hover {
+    transform: scale(1.05);
   }
   @media (min-width: 768px) {
     min-width: initial;

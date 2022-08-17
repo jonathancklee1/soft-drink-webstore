@@ -70,7 +70,7 @@ const ProductList = styled.div`
   gap: 0.5em;
   overflow: hidden;
   overflow-x: scroll;
-  padding: 1em;
+  padding: 1.5em;
   @media (min-width: ${({ theme }) => theme.mobile}) {
     overflow-x: hidden;
   }
