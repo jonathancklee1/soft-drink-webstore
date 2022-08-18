@@ -14,10 +14,10 @@ const initialState = {
       img: "../assets/img/landscape/dr-pepper-cover.jpg",
     },
     {
-      title: "New Jarritos Drinks",
-      subtitle: "Newly Arrived International Drinks",
+      title: "Drinks on the Go",
+      subtitle: "View our selection for travel packs",
+      img: "../assets/img/landscape/car-drinking.jpg",
       brandDeals: false,
-      img: "../assets/img/landscape/jarritos-cover.jpg",
     },
     {
       title: "Freshen Up",
