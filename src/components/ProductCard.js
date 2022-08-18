@@ -4,12 +4,13 @@ import styled from "styled-components";
 function ProductCard(props) {
   return (
     <ProductCardWrap>
-      <img src={props.img}></img>
+      <img src={props.img} alt={props.name}></img>
       <ProductTag>{props.bestSeller ? "Best Seller" : "Featured"}</ProductTag>
       <ProductCardTextWrap>
         <h2>{props.name}</h2>
         <h3>{props.brand}</h3>
         <p>${props.price}</p>
+        <span>{props.type}</span>
       </ProductCardTextWrap>
     </ProductCardWrap>
   );
@@ -22,7 +23,7 @@ const ProductCardWrap = styled.div`
   min-height: 22.6em;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 9px 20px 0px;
   padding: 1em;
-  min-width: 15em;
+  min-width: 20em;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -34,7 +35,7 @@ const ProductCardWrap = styled.div`
   &:hover {
     transform: scale(1.05);
   }
-  @media (min-width: 768px) {
+  @media (min-width: ${({ theme }) => theme.mobile}) {
     min-width: initial;
   }
 `;
@@ -55,6 +56,11 @@ const ProductCardTextWrap = styled.div`
   }
   p {
     color: ${({ theme }) => theme.colors.secondaryColor};
+    margin-bottom: 0.3em;
+  }
+  span {
+    font-style: italic;
+    font-size: 0.8rem;
   }
 `;
 const ProductTag = styled.div`

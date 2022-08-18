@@ -6,7 +6,6 @@ import { selectDrinks } from "../features/drinks/drinkSlice";
 import { useSelector } from "react-redux";
 function ProductRecSection(props) {
   const drinks = useSelector(selectDrinks);
-  console.log(drinks);
   const featuredDrinks = drinks.filter((drink) => drink.featured);
   const bestSellerDrinks = drinks.filter((drink) => drink.bestSeller);
   return (
@@ -26,6 +25,7 @@ function ProductRecSection(props) {
                   price={drink.price}
                   img={drink.img}
                   featured={drink.featured}
+                  type={drink.type}
                 />
               ))
             : bestSellerDrinks.map((drink, index) => (
@@ -36,6 +36,7 @@ function ProductRecSection(props) {
                   price={drink.price}
                   img={drink.img}
                   bestSeller={drink.bestSeller}
+                  type={drink.type}
                 />
               ))}
         </ProductList>

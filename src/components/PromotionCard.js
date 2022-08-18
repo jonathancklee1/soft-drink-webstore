@@ -4,7 +4,6 @@ import { Fade } from "react-reveal";
 import HeadShake from "react-reveal/HeadShake";
 
 function PromotionCard(props) {
-  console.log(props.img);
   return (
     <PromotionPoster img={props.img} width={props.width}>
       <PosterTextWrap>

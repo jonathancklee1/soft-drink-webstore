@@ -8,6 +8,7 @@ const initialState = {
       bestSeller: true,
       featured: false,
       img: "../assets/img/coke1.png",
+      type: "375ml x4 Pack",
     },
     {
       name: "Coca-Cola Zero",
@@ -16,6 +17,7 @@ const initialState = {
       bestSeller: true,
       featured: false,
       img: "../assets/img/coke-zero.png",
+      type: "375ml Can",
     },
     {
       name: "Diet Coke",
@@ -24,14 +26,16 @@ const initialState = {
       bestSeller: false,
       featured: false,
       img: "../assets/img/diet-coke.png",
+      type: "375ml Can",
     },
     {
-      name: "Chupachups",
+      name: "Chupachups Orange",
       brand: "Chupa Chups",
       price: "2.00",
       bestSeller: false,
       featured: true,
       img: "../assets/img/chupachups.png",
+      type: "345ml Can",
     },
     {
       name: "Schweppes Tonic Water",
@@ -40,14 +44,16 @@ const initialState = {
       bestSeller: false,
       featured: true,
       img: "../assets/img/schweppes.png",
+      type: "325ml Can",
     },
     {
-      name: "Fanta",
+      name: "Fanta Zero",
       brand: "The Coca-Cola Company",
       price: "2.50",
       bestSeller: false,
       featured: true,
       img: "../assets/img/fanta.png",
+      type: "375ml Can",
     },
     {
       name: "Bundaberg Blood-Orange",
@@ -56,6 +62,7 @@ const initialState = {
       bestSeller: false,
       featured: true,
       img: "../assets/img/bundaberg.png",
+      type: "375ml Bottle",
     },
     {
       name: "Sprite",
@@ -64,6 +71,7 @@ const initialState = {
       bestSeller: true,
       featured: false,
       img: "../assets/img/sprite.png",
+      type: "375ml Can",
     },
     {
       name: "Mountain Dew",
@@ -72,6 +80,7 @@ const initialState = {
       bestSeller: true,
       featured: false,
       img: "../assets/img/mountain-dew.png",
+      type: "375ml Can",
     },
     {
       name: "Pepsi Cola",
@@ -80,6 +89,7 @@ const initialState = {
       bestSeller: true,
       featured: false,
       img: "../assets/img/pepsi.png",
+      type: "375ml Can",
     },
     {
       name: "Pepsi Max",
@@ -88,6 +98,7 @@ const initialState = {
       bestSeller: false,
       featured: true,
       img: "../assets/img/pepsi-max.png",
+      type: "375ml Can",
     },
   ],
 };

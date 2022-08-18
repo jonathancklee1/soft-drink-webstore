@@ -55,17 +55,22 @@ function Header(theme) {
             <ul>
               <li>
                 <a href="#">
-                  <FaSearch />
+                  <FaSearch onClick={(e) => e.preventDefault()} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <FaStream onClick={() => setBurgerOpen(true)} />
+                  <FaStream
+                    onClick={(e) => {
+                      setBurgerOpen(true);
+                      e.preventDefault();
+                    }}
+                  />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <FaShoppingBag />
+                  <FaShoppingBag onClick={(e) => e.preventDefault()} />
                 </a>
               </li>
             </ul>
@@ -75,17 +80,17 @@ function Header(theme) {
             <ul>
               <li>
                 <a href="#">
-                  <FaUser />
+                  <FaUser onClick={(e) => e.preventDefault()} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <FaSearch />
+                  <FaSearch onClick={(e) => e.preventDefault()} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <FaShoppingBag />
+                  <FaShoppingBag onClick={(e) => e.preventDefault()} />
                 </a>
               </li>
             </ul>

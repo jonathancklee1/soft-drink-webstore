@@ -12,7 +12,7 @@ function Home() {
       <ProductRecSection title="Best Sellers" />
       <PromotionCard
         width="100%"
-        key={2}
+        key={"New Imports From Mexico"}
         title="New Imports From Mexico"
         subtitle="Explore Foreign Drinks"
         img={"../assets/img/landscape/jarritos-strawberry-cover.jpg"}

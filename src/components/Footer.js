@@ -54,7 +54,9 @@ function Footer() {
           </ul>
         </LegalSection>
         <Newsletter>
-          <h4>E-Drinks Newsletter</h4>
+          <h4>
+            <span> E-Drinks</span> Newsletter
+          </h4>
           <form onSubmit={(e) => e.preventDefault()}>
             <input placeholder="Enter your email "></input> <FaEnvelope />
           </form>
@@ -105,6 +107,7 @@ const AboutSection = styled.div`
     li {
       color: white;
       margin-bottom: 0.7em;
+      cursor: pointer;
       &:hover {
         color: ${({ theme }) => theme.colors.headerText};
       }
@@ -120,7 +123,9 @@ const SupportSection = styled(AboutSection)``;
 const LegalSection = styled(AboutSection)``;
 const Newsletter = styled.div`
   padding: 1em;
-
+  span {
+    font-family: Lobster, cursive;
+  }
   form {
     margin-bottom: 2em;
     display: flex;
@@ -128,6 +133,7 @@ const Newsletter = styled.div`
     justify-content: center;
     svg {
       font-size: 1.4em;
+      margin-left: 0.3em;
     }
     input {
       padding: 0.5em 1em;
