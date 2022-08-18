@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <Container>
-      <Banner />
+      <Banner key={"d"}/>
       <ProductRecSection title="Best Sellers" />
       <PromotionCard
         width="100%"

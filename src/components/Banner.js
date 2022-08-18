@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Fade } from "react-reveal";
 import { selectBanners } from "../features/banners/bannerSlice";
@@ -12,12 +12,23 @@ function Banner() {
     setCurrent(current === length - 1 ? 0 : current + 1);
   }
   function prevSlide() {
-    setCurrent(current === length - 1 ? 0 : current - 1);
+    setCurrent(current === 0 ? length - 1 : current - 1);
   }
+  useEffect(() => {
+    // Auto scroll through banners
+    const slideInterval = setInterval(() => {
+      setCurrent((prevCurrent) =>
+        prevCurrent < banners.length - 1 ? prevCurrent + 1 : 0
+      );
+    }, 8000);
+    return () => clearInterval(slideInterval);
+  }, []);
+
+  // Check if banners exist
   if (!banners || banners.length === 0) {
     return null;
   }
-  console.log(current);
+
   return (
     <BannerContainer>
       <StyledAngleLeft onClick={prevSlide} />
@@ -25,8 +36,7 @@ function Banner() {
 
       {banners.map((banner, index) => {
         return (
-
-          <>
+          <React.Fragment key={index}>
             {index === current && (
               <BannerWrap
                 key={banner.title}
@@ -46,22 +56,17 @@ function Banner() {
                       <RightButton>{banner.rightButton}</RightButton>
                     </ButtonGroup>
                   </Fade>
-                </BannerTextWrap>
+                </BannerTextWrap>{" "}
               </BannerWrap>
             )}
-          </>
+          </React.Fragment>
         );
       })}
     </BannerContainer>
   );
 }
 export default Banner;
-const StyledAngleLeft = styled(FaAngleLeft)`
-  left: 1em;
-`;
-const StyledAngleRight = styled(FaAngleRight)`
-  right: 1em;
-`;
+
 const BannerContainer = styled.div`
   height: 100vh;
   width: 100%;
@@ -69,25 +74,33 @@ const BannerContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   svg {
     position: absolute;
-    font-size: 4rem;
-    color: ${({ theme }) => theme.colors.headerText};
+    font-size: 3rem;
+    color: white;
     top: 50%;
     z-index: 99;
     cursor: pointer;
   }
 `;
+const StyledAngleLeft = styled(FaAngleLeft)`
+  left: 1em;
+`;
+
+const StyledAngleRight = styled(FaAngleRight)`
+  right: 1em;
+`;
 const BannerWrap = styled.div`
-  height: 100%;
+  overflow: hidden;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${(props) => props.img});
-  opacity: {
-    ${(props) => (props.className === "current" ? "1" : "0")}
-  }
+  background-image: url(${(props) => props.img}),
+    linear-gradient(0deg, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.2));
+  background-blend-mode: overlay;
   padding: 40px 40px;
   color: white;
   position: relative;
@@ -105,7 +118,7 @@ const BannerWrap = styled.div`
 
 const BannerTextWrap = styled.div`
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
   padding: 1em;
 `;
