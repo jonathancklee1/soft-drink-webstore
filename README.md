@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# E-Drinks - Beverage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive soft-drink e-commerce webpage built with React JS, Redux, and Styled-Components.
 
-## Available Scripts
+<p align="center">
+    <img alt="React" src="https://img.shields.io/badge/-React-61DBFB?style=flat&logo=react&logoColor=FFFFFF"/>
+    <img alt="Redux" src="https://img.shields.io/badge/-Redux-764abc?style=flat&logo=redux&logoColor=FFFFFF"/>
+    <img alt="Styled Components" src="https://img.shields.io/badge/-<💅>%20Styled%20Components-grey?style=flat"/>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+    <img alt="Screenshot" src="./public/assets/img/screenshots/screenshot.png" width="700px">
+</p>
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+E-Drinks is a fictional online beverage e-commerce that is built around the React framework, utilising both Redux and Styled Components. This project is specialised for the front-end of the landing page of the website with a focus on small interactive features like an image carousel and hamburger menu. The development process allowed me to be introduced to both Redux data layers and styling using Styled Components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Features
 
-### `npm test`
+- [x] Responsive design
+- [x] Image carousel
+- [x] Hamburger Menu
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `npm run build`
+- [React JS](https://reactjs.org/docs/getting-started.html)
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [React Redux](https://react-redux.js.org/introduction/getting-started)
+- [Styled-Components](https://styled-components.com/docs)
+- [React Reveal](https://www.react-reveal.com/) for the fade animation
+- [Font Awesome Icons](https://fontawesome.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Live Site
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://jonathancklee1.github.io/soft-drink-webstore
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgments
 
-### `npm run eject`
+- CleverProgrammer - [Building the Tesla Clone with ReactJS (Redux + Styled Components)
+  ](https://www.youtube.com/watch?v=lUeS9Wsj6dk&t=106s) for tutorial
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [G-fuel](https://gfuel.com/en-au) for design inspiration
