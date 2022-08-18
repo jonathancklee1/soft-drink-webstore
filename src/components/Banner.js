@@ -22,7 +22,7 @@ function Banner() {
       );
     }, 8000);
     return () => clearInterval(slideInterval);
-  }, []);
+  }, [banners.length]);
 
   // Check if banners exist
   if (!banners || banners.length === 0) {
@@ -75,6 +75,7 @@ const BannerContainer = styled.div`
   align-items: center;
   position: relative;
   overflow: hidden;
+  background-color: black;
   svg {
     position: absolute;
     font-size: 3rem;

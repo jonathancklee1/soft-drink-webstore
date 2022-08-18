@@ -1,4 +1,4 @@
-# E-Drinks - Beverage
+# E-Drinks - Beverage E-commerce Site
 
 This is a responsive soft-drink e-commerce webpage built with React JS, Redux, and Styled-Components.
 
@@ -10,6 +10,7 @@ This is a responsive soft-drink e-commerce webpage built with React JS, Redux, a
 
 <p align="center">
     <img alt="Screenshot" src="./public/assets/img/screenshots/screenshot.png" width="700px">
+    <img alt="Screenshot 2" src="./public/assets/img/screenshots/screenshot2.png" width="700px">
 </p>
 
 ## About The Project
