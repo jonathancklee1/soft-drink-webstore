@@ -99,7 +99,9 @@ const BannerWrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${(props) => props.img}),
+
+  background-image: ${(props) =>
+      `url(${require(`../assets/img/landscape/${props.img}`)})`},
     linear-gradient(0deg, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.2));
   background-blend-mode: overlay;
   padding: 40px 40px;

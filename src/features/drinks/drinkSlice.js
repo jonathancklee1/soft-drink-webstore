@@ -7,7 +7,7 @@ const initialState = {
       price: "5.00",
       bestSeller: true,
       featured: false,
-      img: "../assets/img/coke1.png",
+      img: "coke1.png",
       type: "375ml x4 Pack",
     },
     {
@@ -16,16 +16,7 @@ const initialState = {
       price: "1.50",
       bestSeller: true,
       featured: false,
-      img: "../assets/img/coke-zero.png",
-      type: "375ml Can",
-    },
-    {
-      name: "Diet Coke",
-      brand: "The Coca-Cola Company",
-      price: "1.50",
-      bestSeller: false,
-      featured: false,
-      img: "../assets/img/diet-coke.png",
+      img: "coke-zero.png",
       type: "375ml Can",
     },
     {
@@ -34,7 +25,7 @@ const initialState = {
       price: "2.00",
       bestSeller: false,
       featured: true,
-      img: "../assets/img/chupachups.png",
+      img: "chupachups.png",
       type: "345ml Can",
     },
     {
@@ -43,7 +34,7 @@ const initialState = {
       price: "2.50",
       bestSeller: false,
       featured: true,
-      img: "../assets/img/schweppes.png",
+      img: "schweppes.png",
       type: "325ml Can",
     },
     {
@@ -52,7 +43,7 @@ const initialState = {
       price: "2.50",
       bestSeller: false,
       featured: true,
-      img: "../assets/img/fanta.png",
+      img: "fanta.png",
       type: "375ml Can",
     },
     {
@@ -61,7 +52,7 @@ const initialState = {
       price: "3.00",
       bestSeller: false,
       featured: true,
-      img: "../assets/img/bundaberg.png",
+      img: "bundaberg.png",
       type: "375ml Bottle",
     },
     {
@@ -70,7 +61,7 @@ const initialState = {
       price: "1.80",
       bestSeller: true,
       featured: false,
-      img: "../assets/img/sprite.png",
+      img: "sprite.png",
       type: "375ml Can",
     },
     {
@@ -79,7 +70,7 @@ const initialState = {
       price: "1.75",
       bestSeller: true,
       featured: false,
-      img: "../assets/img/mountain-dew.png",
+      img: "mountain-dew.png",
       type: "375ml Can",
     },
     {
@@ -88,7 +79,7 @@ const initialState = {
       price: "1.60",
       bestSeller: true,
       featured: false,
-      img: "../assets/img/pepsi.png",
+      img: "pepsi.png",
       type: "375ml Can",
     },
     {
@@ -97,7 +88,7 @@ const initialState = {
       price: "1.80",
       bestSeller: false,
       featured: true,
-      img: "../assets/img/pepsi-max.png",
+      img: "pepsi-max.png",
       type: "375ml Can",
     },
   ],

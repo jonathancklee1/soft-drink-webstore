@@ -50,7 +50,8 @@ const ShopButton = styled.div`
 const PromotionPoster = styled.div`
   width: 100%;
   height: 19em;
-  background-image: url(${(props) => props.img}),
+  background-image: ${(props) =>
+      `url(${require(`../assets/img/landscape/${props.img}`)})`},
     linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5));
   background-blend-mode: overlay;
   color: white;

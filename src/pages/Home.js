@@ -8,14 +8,14 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <Container>
-      <Banner key={"d"}/>
+      <Banner key={"d"} />
       <ProductRecSection title="Best Sellers" />
       <PromotionCard
         width="100%"
         key={"New Imports From Mexico"}
         title="New Imports From Mexico"
         subtitle="Explore Foreign Drinks"
-        img={"../assets/img/landscape/jarritos-strawberry-cover.jpg"}
+        img={"jarritos-strawberry-cover.jpg"}
       />
       <PromotionSection title="Brand Deals" />
       <ProductRecSection title="Popular This Week" />

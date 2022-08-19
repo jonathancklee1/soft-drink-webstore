@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+// import { dietCoke } from "../assets/img";
 
 function ProductCard(props) {
+  console.log(props.img);
   return (
     <ProductCardWrap>
-      <img src={props.img} alt={props.name}></img>
+      <img
+        src={require(`../assets/img/${props.img}`)}
+        alt={props.name}
+      ></img>
       <ProductTag>{props.bestSeller ? "Best Seller" : "Featured"}</ProductTag>
       <ProductCardTextWrap>
         <h2>{props.name}</h2>
