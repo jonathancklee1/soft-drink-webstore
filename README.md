@@ -9,8 +9,8 @@ This is a responsive soft-drink e-commerce webpage built with React JS, Redux, a
 </p>
 
 <p align="center">
-    <img alt="Screenshot" src="./screenshots/screenshot.png" width="700px">
-    <img alt="Screenshot 2" src="./screenshots/screenshot2.png" width="700px">
+    <img alt="Screenshot" src="./public/screenshots/screenshot.png" width="700px">
+    <img alt="Screenshot 2" src="./public/screenshots/screenshot2.png" width="700px">
 </p>
 
 ## About The Project
