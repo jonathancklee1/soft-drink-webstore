@@ -1,10 +1,34 @@
 {
   "files": {
-    "main.js": "/soft-drink-webstore/static/js/main.81cd04f8.js",
+    "main.js": "/soft-drink-webstore/static/js/main.112eb291.js",
+    "static/media/jarritos-cover.jpg": "/soft-drink-webstore/static/media/jarritos-cover.516998d3c1b7c9f2a4cd.jpg",
+    "static/media/coke-cover.jpg": "/soft-drink-webstore/static/media/coke-cover.2fa1d25b066813ed6627.jpg",
+    "static/media/dr-pepper-cover.jpg": "/soft-drink-webstore/static/media/dr-pepper-cover.06a61d28a3f67b03d7e8.jpg",
+    "static/media/car-drinking.jpg": "/soft-drink-webstore/static/media/car-drinking.c9e36b1861aee9cd9f8f.jpg",
+    "static/media/jarritos-strawberry-cover.jpg": "/soft-drink-webstore/static/media/jarritos-strawberry-cover.d878ee319eb0a57de273.jpg",
+    "static/media/screenshot.png": "/soft-drink-webstore/static/media/screenshot.c078ea0f38b97145daf5.png",
+    "static/media/diet-coke.jpg": "/soft-drink-webstore/static/media/diet-coke.ee2f792650dcafaba5d0.jpg",
+    "static/media/tonic-water-cover.jpg": "/soft-drink-webstore/static/media/tonic-water-cover.993cf77f3dd64d5e5edb.jpg",
+    "static/media/drink-table.jpg": "/soft-drink-webstore/static/media/drink-table.abb8154e07bfc248d429.jpg",
+    "static/media/woman-drinking.jpg": "/soft-drink-webstore/static/media/woman-drinking.fc981a0815e40cfab137.jpg",
+    "static/media/vending-machine-banner.jpg": "/soft-drink-webstore/static/media/vending-machine-banner.08623c1ec749e894d14f.jpg",
+    "static/media/screenshot2.png": "/soft-drink-webstore/static/media/screenshot2.e1187efb2480a389c901.png",
+    "static/media/party-drinks.jpg": "/soft-drink-webstore/static/media/party-drinks.8881b9d89b2695fd278c.jpg",
+    "static/media/sprite.png": "/soft-drink-webstore/static/media/sprite.fc3adf838d9836a0ceaf.png",
+    "static/media/fanta.png": "/soft-drink-webstore/static/media/fanta.7681068e7d85198f276d.png",
+    "static/media/chupachups.png": "/soft-drink-webstore/static/media/chupachups.40747269d33e5ebe2305.png",
+    "static/media/schweppes.png": "/soft-drink-webstore/static/media/schweppes.d3d4e1060a7a3d1682f9.png",
+    "static/media/bundaberg.png": "/soft-drink-webstore/static/media/bundaberg.3a29b53f9373de24e2af.png",
+    "static/media/coke1.png": "/soft-drink-webstore/static/media/coke1.a451f3b25f2cafd416e8.png",
+    "static/media/coke-zero.png": "/soft-drink-webstore/static/media/coke-zero.4eeadedc4968d5d1c173.png",
+    "static/media/pepsi-max.png": "/soft-drink-webstore/static/media/pepsi-max.21b9ee193c52e71974ea.png",
+    "static/media/coke.png": "/soft-drink-webstore/static/media/coke.4c39ef3b8cc093238c08.png",
+    "static/media/mountain-dew.png": "/soft-drink-webstore/static/media/mountain-dew.d49a2b4bb519e86b8c42.png",
+    "static/media/pepsi.png": "/soft-drink-webstore/static/media/pepsi.1139806e27ec318ec546.png",
     "index.html": "/soft-drink-webstore/index.html",
-    "main.81cd04f8.js.map": "/soft-drink-webstore/static/js/main.81cd04f8.js.map"
+    "main.112eb291.js.map": "/soft-drink-webstore/static/js/main.112eb291.js.map"
   },
   "entrypoints": [
-    "static/js/main.81cd04f8.js"
+    "static/js/main.112eb291.js"
   ]
 }
