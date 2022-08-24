@@ -81,16 +81,22 @@ const BannerContainer = styled.div`
     font-size: 3rem;
     color: white;
     top: 50%;
-    z-index: 99;
+    z-index: 95;
     cursor: pointer;
   }
 `;
 const StyledAngleLeft = styled(FaAngleLeft)`
-  left: 1em;
+  left: 0.3em;
+  @media (min-width: 768px) {
+    left: 1em;
+  }
 `;
 
 const StyledAngleRight = styled(FaAngleRight)`
-  right: 1em;
+  right: 0.3em;
+  @media (min-width: 768px) {
+    right: 1em;
+  }
 `;
 const BannerWrap = styled.div`
   overflow: hidden;
@@ -129,10 +135,11 @@ const BannerTextContent = styled.div``;
 
 const ButtonGroup = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 1em;
   margin-top: 1em;
-  @media (max-width: 768px) {
-    flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 `;
 const LeftButton = styled.button`
