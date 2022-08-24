@@ -9,22 +9,34 @@ import {
 } from "react-icons/fa";
 
 function Header(theme) {
-  const [isMobile, setIsMobile] = useState(false);
+  let mobile;
+  // Set initial "isMobile" state
+  if (window.innerWidth > 768) {
+    mobile = false;
+  } else {
+    mobile = true;
+  }
+  const [isMobile, setIsMobile] = useState(mobile);
   const [burgerOpen, setBurgerOpen] = useState(false);
 
   // Check if viewport is in mobile width
+  const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+    }
+  };
+  window.addEventListener("load", () => {
+    if (window.innerWidth > 768) {
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+    }
+  });
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsMobile(false);
-      } else {
-        setIsMobile(true);
-      }
-    };
-    window.addEventListener("load", handleResize);
     window.addEventListener("resize", handleResize);
     return () => {
-      window.addEventListener("load", handleResize);
       window.removeEventListener("resize", handleResize);
     };
   }, []);

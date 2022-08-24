@@ -15,13 +15,13 @@ function Footer() {
           <h4>About</h4>
           <ul>
             <li>
-              <a>Our Story</a>
+              <span>Our Story</span>
             </li>
             <li>
-              <a>Latest News</a>
+              <span>Latest News</span>
             </li>
             <li>
-              <a>Giveaways</a>
+              <span>Giveaways</span>
             </li>
           </ul>
         </AboutSection>
@@ -29,13 +29,13 @@ function Footer() {
           <h4>Support</h4>
           <ul>
             <li>
-              <a>FAQ</a>
+              <span>FAQ</span>
             </li>
             <li>
-              <a>Shipping & Returns</a>
+              <span>Shipping & Returns</span>
             </li>
             <li>
-              <a>Accessibility</a>
+              <span>Accessibility</span>
             </li>
           </ul>
         </SupportSection>
@@ -43,13 +43,13 @@ function Footer() {
           <h4>Legal</h4>
           <ul>
             <li>
-              <a>Terms & Conditions</a>
+              <span>Terms & Conditions</span>
             </li>
             <li>
-              <a>Privacy Policies</a>
+              <span>Privacy Policies</span>
             </li>
             <li>
-              <a>Rewards T&C's</a>
+              <span>Rewards T&C's</span>
             </li>
           </ul>
         </LegalSection>
