@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/soft-drink-webstore/static/js/main.a8282ad1.js",
+    "main.js": "/soft-drink-webstore/static/js/main.e3ca757d.js",
     "static/media/jarritos-cover.jpg": "/soft-drink-webstore/static/media/jarritos-cover.516998d3c1b7c9f2a4cd.jpg",
     "static/media/coke-cover.jpg": "/soft-drink-webstore/static/media/coke-cover.2fa1d25b066813ed6627.jpg",
     "static/media/dr-pepper-cover.jpg": "/soft-drink-webstore/static/media/dr-pepper-cover.06a61d28a3f67b03d7e8.jpg",
@@ -26,9 +26,9 @@
     "static/media/mountain-dew.png": "/soft-drink-webstore/static/media/mountain-dew.d49a2b4bb519e86b8c42.png",
     "static/media/pepsi.png": "/soft-drink-webstore/static/media/pepsi.1139806e27ec318ec546.png",
     "index.html": "/soft-drink-webstore/index.html",
-    "main.a8282ad1.js.map": "/soft-drink-webstore/static/js/main.a8282ad1.js.map"
+    "main.e3ca757d.js.map": "/soft-drink-webstore/static/js/main.e3ca757d.js.map"
   },
   "entrypoints": [
-    "static/js/main.a8282ad1.js"
+    "static/js/main.e3ca757d.js"
   ]
 }
