@@ -21,8 +21,10 @@ function Header(theme) {
         setIsMobile(true);
       }
     };
+    window.addEventListener("load", handleResize);
     window.addEventListener("resize", handleResize);
     return () => {
+      window.addEventListener("load", handleResize);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
