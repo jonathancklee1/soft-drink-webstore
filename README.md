@@ -31,6 +31,8 @@ E-Drinks is a fictional online beverage e-commerce that is built around the Reac
 - [Styled-Components](https://styled-components.com/docs)
 - [React Reveal](https://www.react-reveal.com/) for the fade animation
 - [Font Awesome Icons](https://fontawesome.com)
+- [Unsplash](https://unsplash.com/) for images
+- [Pexels](https://www.pexels.com/) for images
 
 ### Live Site
 
